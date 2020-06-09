@@ -1,0 +1,38 @@
+{
+	"name"        : "busyphp/framework",
+	"type"        : "project",
+	"description" : "",
+	"authors"     : [
+		{
+			"name"  : "busy^life",
+			"email" : "busy.life@qq.com"
+		}
+	],
+	"license"     : "Apache-2.0",
+	"require"     : {
+		"php"             : ">=7.1.0",
+		"busyphp/busyphp" : "dev-master"
+	},
+	"require-dev" : {
+		"symfony/var-dumper" : "^4.2"
+	},
+	"autoload"    : {
+		"psr-4" : {
+			"app\\"  : "app",
+			"core\\" : "core"
+		},
+		"psr-0" : {
+			"" : "extend/"
+		}
+	},
+	"config"      : {
+		"preferred-install" : "dist"
+	},
+	"scripts"     : {
+		"post-autoload-dump" : [
+			"@php busy service:discover",
+			"@php busy vendor:publish",
+			"@php busy busyphp:install"
+		]
+	}
+}
