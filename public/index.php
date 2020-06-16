@@ -1,6 +1,6 @@
 <?php
 
-use think\App;
+namespace BusyPHP;
 
 require __DIR__ . '/../vendor/autoload.php';
 

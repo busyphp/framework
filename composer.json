@@ -30,9 +30,9 @@
 	},
 	"scripts"     : {
 		"post-autoload-dump" : [
-			"@php busy service:discover",
-			"@php busy vendor:publish",
-			"@php busy busyphp:install"
+			"@php think service:discover",
+			"@php think vendor:publish",
+			"@php think busy_install"
 		]
 	}
 }

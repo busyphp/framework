@@ -1,8 +1,5 @@
 /.idea/
 /vendor/
 /runtime/
-/src/
 .DS_Store
 composer.lock
-composer.json.dev
-composer.json.bak

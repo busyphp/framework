@@ -22,7 +22,7 @@ return [
     // 空控制器名
     'empty_controller'      => 'Error',
     // 是否使用控制器后缀
-    'controller_suffix'     => true,
+    'controller_suffix'     => false,
     // 默认的路由变量规则
     'default_route_pattern' => '[\w\.]+',
     // 是否开启请求缓存 true自动缓存 支持设置请求缓存规则

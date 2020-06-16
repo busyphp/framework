@@ -2,9 +2,9 @@
 
 namespace app\home\controller;
 
-use BusyPHP\Base\BaseController;
+use BusyPHP\controller;
 
-class IndexController extends BaseController
+class Index extends Controller
 {
     public function index()
     {
