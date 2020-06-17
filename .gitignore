@@ -1,5 +1,6 @@
 /.idea/
 /vendor/
 /runtime/
+/config/extend/
 .DS_Store
 composer.lock

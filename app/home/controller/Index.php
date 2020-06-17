@@ -2,7 +2,7 @@
 
 namespace app\home\controller;
 
-use BusyPHP\controller;
+use BusyPHP\Controller;
 
 class Index extends Controller
 {
