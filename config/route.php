@@ -43,8 +43,6 @@ return [
     'var_jsonp_handler'     => 'callback',
     // 静态资源域名
     'domain_assets'         => '',
-    // 文件资源域名
-    'domain_file'           => '',
     // 中间件
     'middleware'            => [],
 ];
