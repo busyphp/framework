@@ -4,3 +4,6 @@
 /config/extend/
 .DS_Store
 composer.lock
+/public/assets/admin
+/public/assets/static
+/public/assets/*.lock
