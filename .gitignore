@@ -1,6 +1,6 @@
 /.idea/
 /vendor/
-/runtime/
+/runtime/!*gitkeep
 /config/extend/
 .DS_Store
 composer.lock
