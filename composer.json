@@ -18,14 +18,17 @@
 		"busyphp/install"    : "^1.0"
 	},
 	"autoload"    : {
-		"psr-4" : {
+		"psr-4"                 : {
 			"app\\"                         : "app",
 			"core\\"                        : "core",
 			"BusyPHP\\app\\admin\\assets\\" : "vendor/busyphp/busyphp/src/app/admin/static"
 		},
-		"psr-0" : {
+		"psr-0"                 : {
 			"" : "extend/"
-		}
+		},
+		"exclude-from-classmap" : [
+			"runtime"
+		]
 	},
 	"config"      : {
 		"preferred-install" : "dist"
