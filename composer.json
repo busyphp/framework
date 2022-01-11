@@ -1,23 +1,24 @@
 {
-	"name"        : "busyphp/framework",
-	"type"        : "project",
-	"description" : "",
-	"authors"     : [
+	"name"         : "busyphp/framework",
+	"type"         : "project",
+	"description"  : "",
+	"authors"      : [
 		{
 			"name"  : "busy^life",
 			"email" : "busy.life@qq.com"
 		}
 	],
-	"license"     : "CC-BY-NC-4.0",
-	"require"     : {
+	"license"      : "CC-BY-NC-4.0",
+	"require"      : {
 		"php"             : ">=7.1.0",
 		"busyphp/busyphp" : "^6.0"
 	},
-	"require-dev" : {
+	"require-dev"  : {
 		"symfony/var-dumper" : "^4.2",
-		"busyphp/install"    : "^1.0"
+		"busyphp/install"    : "^1.0",
+		"phpunit/phpunit"    : "^8.0"
 	},
-	"autoload"    : {
+	"autoload"     : {
 		"psr-4"                 : {
 			"app\\"                         : "app",
 			"core\\"                        : "core",
@@ -30,10 +31,15 @@
 			"runtime"
 		]
 	},
-	"config"      : {
+	"autoload-dev" : {
+		"psr-4" : {
+			"tests\\" : "tests/"
+		}
+	},
+	"config"       : {
 		"preferred-install" : "dist"
 	},
-	"scripts"     : {
+	"scripts"      : {
 		"post-autoload-dump" : [
 			"@php think service:discover",
 			"@php think vendor:publish",
