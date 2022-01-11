@@ -10,7 +10,7 @@
 	],
 	"license"      : "CC-BY-NC-4.0",
 	"require"      : {
-		"php"             : ">=7.1.0",
+		"php"             : ">=7.2.5",
 		"busyphp/busyphp" : "^6.0"
 	},
 	"require-dev"  : {
