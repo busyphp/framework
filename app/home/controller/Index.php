@@ -8,6 +8,6 @@ class Index extends Controller
 {
     public function index()
     {
-        return '<h1>欢迎使用BusyPHP.</h1>';
+        return $this->display();
     }
 }
