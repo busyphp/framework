@@ -61,22 +61,22 @@ return [
             // ],
             
             // 登录相关
-            'login'    => [
+            // 'login'    => [
                 // 解密通行 authKey 的秘钥，24位字符，默认为：Pe78mUtfomfhHqSHGpQ3jAlI
-                'auth_secret'           => '',
+                // 'auth_secret'           => '',
                 
                 // 通行token扩展
-                'auth_extend'           => [
+                // 'auth_extend'           => [
                     // 创建扩展内容，生成token时调用
-                    'create' => null,
+                    // 'create' => null,
                     
                     // 检测扩展内容，检测登录时调用，失败请抛出异常
-                    'check'  => null
-                ],
+                    // 'check'  => null
+                // ],
                 
                 // 允许多设备同时登录的token生成扩展，支持闭包与字符串，闭包必须返回字符串
-                'multiple_client_token' => null,
-            ],
+                // 'multiple_client_token' => null,
+            // ],
         ],
         
         // 用户通行模型
