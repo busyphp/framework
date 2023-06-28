@@ -11,7 +11,7 @@
 	"license"      : "Apache-2.0",
 	"require"      : {
 		"php"             : ">=8.0",
-		"busyphp/busyphp" : "^7.0"
+		"busyphp/busyphp" : "^7.0.3"
 	},
 	"require-dev"  : {
 		"symfony/var-dumper" : "^4.2",

@@ -41,15 +41,42 @@ return [
         // 通用打印样式
         'print_style'           => '',
         
-        // 通知
-        'notice'                => false,
+        // 通知铃声URL
+        'bell'                  => '',
+        
+        // 全局websocket
+        'ws'                    => [
+            // 是否启用
+            'enable'          => false,
+            
+            // websocket 地址
+            'url'             => '',
+            
+            // 发送ping包间隔毫秒，0为不发送
+            'ping_interval'   => 5000,
+            
+            // 发送ping包的数据
+            'ping_data'       => '',
+            
+            // 断线重连间隔毫秒
+            'reconnect_delay' => 3000,
+        ],
+        
+        // 系统消息
+        'message'               => [
+            // 是否启用
+            'enable'  => true,
+            
+            // 操作解析回调
+            'operate' => ''
+        ],
         
         // 待办
         'todo'                  => [
             // 是否启用
             'enable' => false,
             
-            /** 注册待办类，必须集成 {@see \BusyPHP\app\admin\component\message\todo\TodoInterface} 接口 */
+            /** 注册待办类，必须集成 {@see \BusyPHP\app\admin\component\notice\data\TodoInterface} 接口 */
             'class'  => []
         ]
     ]
