@@ -65,7 +65,7 @@ return [
         // 系统消息
         'message'               => [
             // 是否启用
-            'enable'  => true,
+            'enable'  => false,
             
             // 操作解析回调
             'operate' => ''
@@ -78,6 +78,9 @@ return [
             
             /** 注册待办类，必须集成 {@see \BusyPHP\app\admin\component\notice\data\TodoInterface} 接口 */
             'class'  => []
-        ]
+        ],
+        
+        // 是否隐藏系统管理员
+        'hide_system_user'      => false,
     ]
 ];
